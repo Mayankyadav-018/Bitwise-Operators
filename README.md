@@ -62,6 +62,59 @@ Conditional 	?: 	Right to left
 Assignment 	= += -= *= /= %=>>= <<= &= ^= |= 	Right to left 
 Comma 	, 	Left to right 
 
+Algorithm: Perform Bitwise Operations on Two Integers
+Start
+
+Declare and initialize two integer variables:
+2.1 a = 7
+2.2 b = 4
+
+Perform bitwise operations:
+3.1 Calculate bitwise_and = a & b
+3.2 Calculate bitwise_or = a | b
+3.3 Calculate bitwise_not = ~a
+3.4 Calculate bitwise_xor = a ^ b
+3.5 Calculate left_shift = a << 2
+3.6 Calculate right_shift = a >> 1
+
+Display the results:
+4.1 Print the result of bitwise AND
+4.2 Print the result of bitwise OR
+4.3 Print the result of bitwise NOT
+4.4 Print the result of bitwise XOR
+4.5 Print the result of left shift
+4.6 Print the result of right shift
+
+End
+
+Algorithm: Set and Reset Specific Bits in an Integer
+Start
+
+Declare and initialize an integer variable:
+2.1 a = 24
+
+Declare variables:
+3.1 bit_to_be_set (to store bit position to be set)
+3.2 bit_to_be_reset (to store bit position to be reset)
+3.3 set (to store result after setting bit)
+3.4 reset (to store result after resetting bit)
+
+Set a bit:
+4.1 Prompt the user to enter the bit position to be set and store it in bit_to_be_set.
+4.2 Compute: set = a | (1 << bit_to_be_set)
+
+Reset a bit:
+5.1 Prompt the user to enter the bit position to be reset and store it in bit_to_be_reset.
+5.2 Compute: reset = a & (~(1 << bit_to_be_reset))
+
+Display the results:
+6.1 Print set as the number after setting the bit
+6.2 Print reset as the number after resetting the bit
+
+End
+
+
+
 Conclusion:
 In this experiment, we studied various bitwise operators in C++ such as AND (&), OR (|), XOR (^), NOT (~), left shift (<<), and right shift (>>). We learned how these operators work at the binary level and how they manipulate individual bits of integers. By writing and executing simple programs, we understood their practical usage and importance in low-level programming and optimization. This experiment helped us strengthen our understanding of binary operations in C++.
 
