@@ -1,91 +1,44 @@
-Experiment No. 4
+# EXPERIMENT NO. 4
 
-Bitwise Operators
-p	q	p & q	p | q	p ^ q
-0	0	0	0	0
-0	1	0	1	1
-1	1	1	1	0
-1	0	0	1	1
+* Aim: To study and implement bitwise operators in C++ and understand how binary-level operations are performed.
 
-Operator	Description	Example
-&	Binary AND Operator copies a bit to the result if it exists in both operands.	(A & B) will give 12 which is 0000 1100
-|	Binary OR Operator copies a bit if it exists in either operand.	(A | B) will give 61 which is 0011 1101
-^	Binary XOR Operator copies the bit if it is set in one operand but not both.	(A ^ B) will give 49 which is 0011 0001
-~	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.	(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.
-<<	Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.	A << 2 will give 240 which is 1111 0000
->>	Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.	A >> 2 will give 15 which is 0000 1111
-Assignment Operators
-Operator	Description	Example
-=	Simple assignment operator, Assigns values from right side operands to left side operand.	C = A + B will assign value of A + B into C
-+=	Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand.	C += A is equivalent to C = C + A
--=	Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand.	C -= A is equivalent to C = C - A
-*=	Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand.	C *= A is equivalent to C = C * A
-/=	Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand.	C /= A is equivalent to C = C / A
-%=	Modulus AND assignment operator, It takes modulus using two operands and assign the result to left operand.	C %= A is equivalent to C = C % A
-<<=	Left shift AND assignment operator.	C <<= 2 is same as C = C << 2
->>=	Right shift AND assignment operator.	C >>= 2 is same as C = C >> 2
-&=	Bitwise AND assignment operator.	C &= 2 is same as C = C & 2
-^=	Bitwise exclusive OR and assignment operator.	C ^= 2 is same as C = C ^ 2
+* Tools used : IDE, Bitwise operators, arithmetic operators.
+  
+* Theory: Bitwise operators in C++ are used to perform operations on individual bits of integer data. These operators are particularly useful in low-level programming, optimization tasks, cryptography, hardware interfacing, and situations requiring direct binary manipulation. Bitwise operations are faster and more efficient compared to arithmetic operations, especially in system-level programming.
 
-Misc Operators
-Sr.No	Operator & Description
-1	sizeof
-sizeof operator returns the size of a variable. For example, sizeof(a), where ‘a’ is integer, and will return 4.
-2	Condition ?X : Y
-Conditional operator (?). If Condition is true then it returns value of X otherwise returns value of Y.
-3	,
-Comma operator causes a sequence of operations to be performed. The value of the entire comma expression is the value of the last expression of the comma-separated list.
-4	. (dot) and -> (arrow)
-Member operators are used to reference individual members of classes, structures, and unions.
-5	Cast
-Casting operators convert one data type to another. For example, int(2.2000) would return 2.
-6	&
-Pointer operator & returns the address of a variable. For example &a; will give actual address of the variable.
-7	*
-Pointer operator * is pointer to a variable. For example *var; will pointer to a variable var.
+🔹 Bitwise Operators in C++ – Theory (Definition Style):
 
-Operators Precedence in C++
-Category 	Operator 	Associativity 
-Postfix 	() [] -> . ++ - -  	Left to right 
-Unary 	+ - ! ~ ++ - - (type)* & sizeof 	Right to left 
-Multiplicative  	* / % 	Left to right 
-Additive  	+ - 	Left to right 
-Shift  	<<>> 	Left to right 
-Relational  	<<= >>= 	Left to right 
-Equality  	== != 	Left to right 
-Bitwise AND 	& 	Left to right 
-Bitwise XOR 	^ 	Left to right 
-Bitwise OR 	| 	Left to right 
-Logical AND 	&& 	Left to right 
-Logical OR 	|| 	Left to right 
-Conditional 	?: 	Right to left 
-Assignment 	= += -= *= /= %=>>= <<= &= ^= |= 	Right to left 
-Comma 	, 	Left to right 
+1. *& (Bitwise AND)*:
+Performs a logical AND operation on each bit of the two operands. The result bit is 1 only if both corresponding bits are 1.
+🔸 Example: c = a & b;
 
-Algorithm: Perform Bitwise Operations on Two Integers
-Start
+2. *| (Bitwise OR)*:
+Performs a logical OR operation on each bit of the operands. The result bit is 1 if at least one of the corresponding bits is 1.
+🔸 Example: c = a | b;
 
-Declare and initialize two integer variables:
-2.1 a = 7
-2.2 b = 4
+3. *^ (Bitwise XOR)*:
+Performs a logical XOR (exclusive OR). The result bit is 1 only if the corresponding bits of the operands are different.
+🔸 Example: c = a ^ b;
 
-Perform bitwise operations:
-3.1 Calculate bitwise_and = a & b
-3.2 Calculate bitwise_or = a | b
-3.3 Calculate bitwise_not = ~a
-3.4 Calculate bitwise_xor = a ^ b
-3.5 Calculate left_shift = a << 2
-3.6 Calculate right_shift = a >> 1
+4. *~ (Bitwise NOT)*:
+Performs a bitwise complement (1's complement), flipping each bit of the operand (i.e., 0 becomes 1, and 1 becomes 0).
+🔸 Example: c = ~a;
 
-Display the results:
-4.1 Print the result of bitwise AND
-4.2 Print the result of bitwise OR
-4.3 Print the result of bitwise NOT
-4.4 Print the result of bitwise XOR
-4.5 Print the result of left shift
-4.6 Print the result of right shift
+5. *<< (Left Shift)*:
+Shifts the bits of the operand to the left by the specified number of positions. Each left shift multiplies the number by 2.
+🔸 Example: c = a << 1;
 
-End
+6. *>> (Right Shift)*:
+Shifts the bits of the operand to the right by the specified number of positions. Each right shift divides the number by 2.
+🔸 Example: c = a >> 2;
+
+
+
+# Use of bitwise operators:
+
+This C++ program demonstrates the use of bitwise operators such as AND, OR, NOT, XOR, left shift, and right shift using two predefined integers. It calculates and displays the result of each operation, helping students understand how data is manipulated at the binary level.
+
+
 
 Algorithm: Set and Reset Specific Bits in an Integer
 Start
