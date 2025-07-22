@@ -38,33 +38,31 @@ Shifts the bits of the operand to the right by the specified number of positions
 
 This C++ program demonstrates the use of bitwise operators such as AND, OR, NOT, XOR, left shift, and right shift using two predefined integers. It calculates and displays the result of each operation, helping students understand how data is manipulated at the binary level.
 
+1> Start
+
+2> Declare and initialize two integer variables: a, b.
+
+3> Perform bitwise operations:
+
+  * bitwise_and = a & b
+
+  * bitwise_or = a | b
+
+  * bitwise_not = ~a
+
+  * bitwise_xor = a ^ b
+
+  * left_shift = a << 2
+
+  * right_shift = a >> 1
+
+4> Display the results of each operation using cout
+
+5> End
 
 
-Algorithm: Set and Reset Specific Bits in an Integer
-Start
+# Set and Reset Specific Bit position in an integer
 
-Declare and initialize an integer variable:
-2.1 a = 24
-
-Declare variables:
-3.1 bit_to_be_set (to store bit position to be set)
-3.2 bit_to_be_reset (to store bit position to be reset)
-3.3 set (to store result after setting bit)
-3.4 reset (to store result after resetting bit)
-
-Set a bit:
-4.1 Prompt the user to enter the bit position to be set and store it in bit_to_be_set.
-4.2 Compute: set = a | (1 << bit_to_be_set)
-
-Reset a bit:
-5.1 Prompt the user to enter the bit position to be reset and store it in bit_to_be_reset.
-5.2 Compute: reset = a & (~(1 << bit_to_be_reset))
-
-Display the results:
-6.1 Print set as the number after setting the bit
-6.2 Print reset as the number after resetting the bit
-
-End
 
 
 
